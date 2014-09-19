@@ -30,7 +30,7 @@ describe Youruby do
     end
 
     describe 'download' do
-      xit ".download_video" do
+      it ".download_video" do
         FakeFS do
           video.download_video
           File.exists? "#{video.get_title}-#{video.get_id}.mp4"
