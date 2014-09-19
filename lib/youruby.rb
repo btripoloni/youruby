@@ -45,14 +45,14 @@ module Youruby
       }
     end
 
-    def set_url(url)
+    def url(url)
       url = URI.parse url
       url_parse = CGI.parse(url.query)
       true if @id = url_parse['v'].first
 
     end
 
-    def set_path(path)
+    def path(path)
       true if @location = path
     end
 
