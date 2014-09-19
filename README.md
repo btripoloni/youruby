@@ -20,16 +20,16 @@ Or install it yourself as:
 
     video_id = "xJkVQa_PMTY"
     video = Youruby::Youtube.new(video_id)
-    video.get_video #make download of video.
+    video.download_video #make download of video.
 
     Other methods
-    video.get_title
-    video.get_id
-    video.get_url
-    video.get_thumbnail #returns a hash
+    video.title
+    video.id
+    video.url
+    video.thumbnail #returns a hash
 
-    video.set_url("https://www.youtube.com/watch?v=UwPWLCVekGc") #set the id using the url of video.
-    video.set_path("make/downloads/here") #set the location of the video is downloaded
+    video.url("https://www.youtube.com/watch?v=UwPWLCVekGc") #set the id using the url of video.
+    video.path("make/downloads/here") #set the location of the video is downloaded
 
 
 
