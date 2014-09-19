@@ -61,6 +61,7 @@ module Youruby
     end
 
     private
+
     def thumbnail_url(path)
       "http://img.youtube.com/vi/#{@id}/#{path}.jpg"
     end
