@@ -8,7 +8,8 @@ describe Youruby do
   context 'Youtube'do
     describe 'get' do
       it ".video_title" do
-        expect(video.get_title).to eq("FFmpeg-slowmotion.1\n")
+        expect(video.get_title).to eq("FFmpeg-slowmotion.1")
+        end
       end
 
       it ".video_id" do
@@ -16,30 +17,36 @@ describe Youruby do
       end
 
       it ".video_url" do
-
         expect(video.get_url).to eq("http://youtube.com/watch?v=uaEJvYWc2ag")
-      end
-
-      it ".get_video" do
-        FakeFS do
-          video.get_video
-          File.exists? "#{video.get_title}-#{video.get_id}.mp4"
-        end
       end
 
       it '.get_thumbnails' do
         expect(video.get_thumbnails['quality']['default']).to eq("http://img.youtube.com/vi/uaEJvYWc2ag/default.jpg")
       end
+
+      it '.file_path' do
+        expect(video.file_path).to eq("temp/download/FFmpeg-slowmotion.1-uaEJvYWc2ag.mp4")
+      end
+    end
+
+    describe 'download' do
+      xit ".download_video" do
+        FakeFS do
+          video.download_video
+          File.exists? "#{video.get_title}-#{video.get_id}.mp4"
+        end
+      end
+
+      it ".download_preview"
     end
 
     describe 'set' do
       it '.set_url' do
-        video.set_url("https://www.youtube.com/watch?v=lIzAlULvipk")
-        expect(video.get_id).to eq("lIzAlULvipk")
+        expect(video.set_url("https://www.youtube.com/watch?v=lIzAlULvipk")).to eq(true)
       end
 
-      it 'set_path' do
-        pending
+      it "set_path" do
+        expect(video.set_path("/local/")).to eq(true)
       end
     end
   end
