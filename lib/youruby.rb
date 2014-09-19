@@ -10,16 +10,16 @@ module Youruby
       @location = "temp/download"
     end
 
-    def get_title
+    def title
       title = `#{YT_DL} --get-title #{get_url}`
       title.delete("\n")
     end
 
-    def get_id
+    def id
       @id
     end
 
-    def get_url
+    def url
       "http://youtube.com/watch?v=#{@id}"
     end
 
@@ -27,7 +27,7 @@ module Youruby
       File.join(@location, "#{get_title}-#{get_id}.mp4")
     end
 
-    def get_thumbnails
+    def thumbnails
       {
         "frames" => {
           0 => thumbnail_url("0"),
