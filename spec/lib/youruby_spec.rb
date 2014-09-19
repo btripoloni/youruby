@@ -7,21 +7,20 @@ describe Youruby do
   let(:video) {Youruby::Youtube.new('uaEJvYWc2ag')}
   context 'Youtube'do
     describe 'get' do
-      it ".video_title" do
-        expect(video.get_title).to eq("FFmpeg-slowmotion.1")
-        end
+      it ".title" do
+        expect(video.title).to eq("FFmpeg-slowmotion.1")
       end
 
-      it ".video_id" do
-        expect(video.get_id).to eq("uaEJvYWc2ag")
+      it ".id" do
+        expect(video.id).to eq("uaEJvYWc2ag")
       end
 
-      it ".video_url" do
-        expect(video.get_url).to eq("http://youtube.com/watch?v=uaEJvYWc2ag")
+      it ".url" do
+        expect(video.url).to eq("http://youtube.com/watch?v=uaEJvYWc2ag")
       end
 
-      it '.get_thumbnails' do
-        expect(video.get_thumbnails['quality']['default']).to eq("http://img.youtube.com/vi/uaEJvYWc2ag/default.jpg")
+      it '.thumbnails' do
+        expect(video.thumbnails['quality']['default']).to eq("http://img.youtube.com/vi/uaEJvYWc2ag/default.jpg")
       end
 
       it '.file_path' do
@@ -41,12 +40,12 @@ describe Youruby do
     end
 
     describe 'set' do
-      it '.set_url' do
-        expect(video.set_url("https://www.youtube.com/watch?v=lIzAlULvipk")).to eq(true)
+      it '.url' do
+        expect(video.url("https://www.youtube.com/watch?v=lIzAlULvipk")).to eq(true)
       end
 
-      it "set_path" do
-        expect(video.set_path("/local/")).to eq(true)
+      it "path" do
+        expect(video.path("/local/")).to eq(true)
       end
     end
   end
