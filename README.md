@@ -1,4 +1,4 @@
-# Youruby [![Inline docs](http://inch-ci.org/github/btripoloni/youruby.svg?branch=master)](http://inch-ci.org/github/btripoloni/youruby)
+# Youruby [![Code Climate](https://codeclimate.com/github/btripoloni/youruby/badges/gpa.svg)](https://codeclimate.com/github/btripoloni/youruby)[![Inline docs](http://inch-ci.org/github/btripoloni/youruby.svg?branch=master)](http://inch-ci.org/github/btripoloni/youruby)
 
 Make donwloads of videos form Youtube using ruby
 
