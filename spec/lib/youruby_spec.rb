@@ -1,5 +1,7 @@
 require 'spec_helper'
 require 'fakefs/spec_helpers'
+require "codeclimate-test-reporter"
+CodeClimate::TestReporter.start
 require 'youruby'
 
 
