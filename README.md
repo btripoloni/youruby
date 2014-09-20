@@ -1,4 +1,4 @@
-# Youruby [![Code Climate](https://codeclimate.com/github/btripoloni/youruby/badges/gpa.svg)](https://codeclimate.com/github/btripoloni/youruby)[![Inline docs](http://inch-ci.org/github/btripoloni/youruby.svg?branch=master)](http://inch-ci.org/github/btripoloni/youruby)
+# Youruby [![Code Climate](https://codeclimate.com/github/btripoloni/youruby/badges/gpa.svg)](https://codeclimate.com/github/btripoloni/youruby)[![Inline docs](http://inch-ci.org/github/btripoloni/youruby.svg?branch=master)](http://inch-ci.org/github/btripoloni/youruby)[![Project Status](http://stillmaintained.com/btripoloni/youruby.png)](http://stillmaintained.com/btripoloni/youruby)
 
 Make donwloads of videos form Youtube using ruby
 
@@ -26,12 +26,10 @@ Or install it yourself as:
     video.title
     video.id
     video.url
-    video.thumbnail #returns a hash
+    video.thumbnail(<quality>) #returns a hash
 
     video.url("https://www.youtube.com/watch?v=UwPWLCVekGc") #set the id using the url of video.
     video.path("make/downloads/here") #set the location of the video is downloaded
-
-
 
 
 ## Contributing
