@@ -1,3 +1,4 @@
+[![Stories in Ready](https://badge.waffle.io/btripoloni/youruby.png?label=ready&title=Ready)](https://waffle.io/btripoloni/youruby)
 # Youruby [![Code Climate](https://codeclimate.com/github/btripoloni/youruby/badges/gpa.svg)](https://codeclimate.com/github/btripoloni/youruby) [![Inline docs](http://inch-ci.org/github/btripoloni/youruby.svg?branch=master)](http://inch-ci.org/github/btripoloni/youruby) [![Project Status] (http://stillmaintained.com/btripoloni/youruby.png)](http://stillmaintained.com/btripoloni/youruby) [![Dependency Status](https://gemnasium.com/btripoloni/youruby.svg)](https://gemnasium.com/btripoloni/youruby)
 
 Make donwloads of videos form Youtube using ruby
