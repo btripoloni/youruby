@@ -1,7 +1,7 @@
 language: ruby
 rvm:
-  -ruby
-  -2.1.0
+  - ruby
+  - 2.1.0
 
 addons:
   code_climate:
