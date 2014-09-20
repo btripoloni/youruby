@@ -1,6 +1,6 @@
 language: ruby
 rvm:
-  -2.1.0p0
+  -2.1.0-p0
 
 addons:
   code_climate:
